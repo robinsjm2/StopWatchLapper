@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="45dp">
+    <TextView android:text="00:00.00" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDisplay1" />
+    <TextView android:id="@+id/txtDisplay2" android:text="00:00.00" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/btnStart"
+            android:onClick="startWatch"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:id="@+id/btnStop"
+            android:onClick="stopWatch" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lap"
+            android:id="@+id/btnLap"
+            android:onClick="lap" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/btnReset"
+            android:onClick="resetWatch" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lap Log"
+        android:id="@+id/txtLapLog" />
+
+</LinearLayout>
